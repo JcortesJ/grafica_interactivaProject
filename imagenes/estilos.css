@@ -3,7 +3,7 @@
 body{
  
 font-family: 'Poppins', sans-serif; /* Me trae la fuente de Google Fonts y la establezco para todas las paginas */
-   background-image: linear-gradient(90deg, #833ab4 18%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 89%);
+   background-image: linear-gradient(90deg, #833ab4 18%, rgb(211, 110, 110) 56%, rgba(252,176,69,1) 89%);
 
 
    /* esta etiqueta me genera un gradiente lineal con 3 colores y su porcentaje */
@@ -303,8 +303,9 @@ a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
 
     display: block;
-    width: 40%;
+    width: fit-content;
     height: fit-content;
+
     border-style: solid;
     border-color: #4c8c92;
     background-image: #d48d8d;
@@ -345,6 +346,7 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
     margin-left: 40px; /*establece cual es la distancia entre el texto y la margen izquierda y derecha*/
     margin-right: 40px;
+    width: fit-content;
     height: fit-content;
     border-style:dashed;
     background-color: #f3b359c4;
@@ -392,6 +394,7 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
     margin-left: 40px;
     margin-right: 40px;
+    width: fit-content;
     height: fit-content;
     border-style:dashed; /*Establece el borde de la sección como punteado*/
     background-color: #DC3737;
@@ -408,6 +411,7 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
     margin-left: 40px;
     margin-right: 40px;
+    width: fit-content;
     height: fit-content;
     border-style:dashed;
     background-color: #EA5959;
@@ -450,8 +454,8 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
     margin-left: 40px;
     margin-right: 40px;
-    
-    max-height: fit-content;
+    width: fit-content;
+    height: fit-content;
     border-style:dashed;
     background-color: #FDB87D;
     color: #878849;
