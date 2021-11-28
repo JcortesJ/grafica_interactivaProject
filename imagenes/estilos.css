@@ -501,7 +501,7 @@ table,tr,th,td{
 
 }
 
-.mapa_sitio::hover{
+.mapa_sitio:hover{
     height: 80%;
     width: 80%;
     border-radius: 4px;
