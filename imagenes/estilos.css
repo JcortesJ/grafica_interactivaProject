@@ -491,3 +491,19 @@ table,tr,th,td{
     border-spacing: 13px 13px;
     padding: 3%;
 }
+
+/* pagina 5, seccion créditos */
+
+.mapa_sitio{
+    height: 50%;
+    width: 50%;
+    border-radius: 4px;
+
+}
+
+.mapa_sitio::hover{
+    height: 80%;
+    width: 80%;
+    border-radius: 4px;
+    
+}
