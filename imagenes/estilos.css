@@ -217,8 +217,8 @@ h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
 .titulo-De-la-Pagina{
     margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
 
-    width: 60%;
-    height: 40%;
+    width: fit-content;
+    height: fit-content;
     border-style: solid;
     border-color: #D63447;
     border-size: 2px;
