@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+ 
+font-family: 'Poppins', sans-serif; /* Me trae la fuente de Google Fonts y la establezco para todas las paginas */
+   background-image: linear-gradient(90deg, #833ab4 18%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 89%);
+
+
+   /* esta etiqueta me genera un gradiente lineal con 3 colores y su porcentaje */
+   
+   /*Ajustamos las margenes del documento */
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-top: 10px;
+   margin-bottom: 40px;
+   
+}
+
+/*
+.boton_desplegable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    /*
+    background: #000;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+
+.desplegable :hover ~ .boton_desplegable{
+    clip-path: circle(75%);
+}
+*/
+/* pendiente ver como hacer para que en el primer estilo se quede el menu 
+y no desaparezca luego de dejar de tocar el desplegable */
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .boton_desplegable {
+    display: none;
+    position: absolute;
+    background-color: #7dc2b6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 20; /* hace que el menu esté encima de los demás*/
+    transition: all 0.3s ease-in-out;
+  }
+
+  .lista_desplegable li {
+    list-style-type: none;
+  }
+  
+  .desplegable:hover .boton_desplegable {
+    display:block;
+  }
+
+  #btn_menu{
+      display: none;
+  }
+ 
+  @media only screen and  (max-width: 840px) { /* cuando la ventana mida menos de 640px */
+    body {
+        background-image: linear-gradient(90deg, #ccbebd 18%, rgb(201, 29, 253) 56%, rgb(69, 252, 237) 89%);
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .navegacion-pagina{
+       
+        font-family: 'Poppins', sans-serif;
+        text-align:left;
+        background-color: #60b2ff;
+        
+    }
+
+    .introduccion{
+        font-size: 20px;
+        line-height : 30px; /* Modifica el interlineado del texto*/ 
+    }
+
+    table,tr,th,td{
+        /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 13px 13px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.1;
+        position: relative;
+        float:right;
+    }
+    
+  }
+
+    
+
+  
+
+
+  @media only screen and  (max-width: 640px) { /* cuando la ventana mida menos de 640px */
+    body {
+        background-image: linear-gradient(90deg, #b158cc 18%, rgb(115, 155, 248) 56%, rgb(255, 126, 137) 89%);
+        font-size: 18px;
+
+
+    }
+
+    p{
+        font-size: 18px;
+    }
+    .navegacion-paginas{
+        display: none; /*hace que la navegación de la página se vea invisible 
+        y solo se note el botón del menu */
+    }
+
+    #btn_menu{
+        display: block;
+    }
+
+    .introduccion{
+        font-size: 25px;
+        line-height : 30px; /* Modifica el interlineado del texto*/ 
+        text-align: left;
+    }
+
+    .imagenIntroduccion{
+        width: 60%;
+        height: 50%;
+        border-radius: 30px;
+    }
+
+    .imagenIntroduccion:hover{
+        border-radius: 50px;
+
+    }
+
+    .informacion-inicial{
+        display: none;
+    }
+
+    
+
+    .navegacion-pagina{
+       
+        font-family: 'Poppins', sans-serif;
+        text-align:left;
+        background-color: #FFD460;
+        
+    }
+
+    
+    
+
+
+    table,tr,th,td{
+        /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 15px 15px;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.2;
+        position: relative;
+        float:left;
+    }
+    
+  }
+
+
+
+  
+h1{
+   text-align: center; /*Centra los titulos h1, le da color, y tamaño a la fuente*/
+   color: #FFFF00;
+   font-size: 70px;
+}
+
+h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
+    color: #2D4059;
+    text-align: center;
+  
+ }
+
+.informacion-inicial{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+
+    /*Establece el ancho y largo de la sección de modo que se ajuste al contenido*/
+    width: fit-content;
+    height: fit-content;
+    /*establece las propiedades del borde, estilo, color y grosor*/
+    border-style: solid;
+    border-color: #2D4059;
+    border-size: 2px;
+/*Establece las propiedades del texto: fuente, alineación y tamaño*/
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    font-size: 20px;
+    /*establece distancia entre el texto y el borde*/
+    padding: 0.4%;
+}
+
+.titulo-De-la-Pagina{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+
+    width: 60%;
+    height: 40%;
+    border-style: solid;
+    border-color: #D63447;
+    border-size: 2px;
+    font-family:'Montserrat', sans-serif;
+    color: antiquewhite;
+    text-align:center;
+    font-size: large;
+    padding: 0.4%;
+}
+
+.introduccion{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    height: fit-content;
+    border-style:dashed;
+    background-color: #C24914;
+    color: #FFF8CD;
+    border-color: #2D4059;
+    border-size: 2px;
+    font-family: 'Poppins', sans-serif;
+
+    text-align:center;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.imagenIntroduccion{
+    /*Define el ancho y alto de la imagen, así como que sus esquinas tengan bordes redondeados*/
+    height: 200px;
+    width: 300px;
+    border-size:2px;
+    border-radius: 20px;
+    
+   
+}
+/*Este elemento sirve para decirle a css que hacer cuando se ponga un cursor sobre la etiqueta*/
+.imagenIntroduccion:hover{
+    height: 90%;
+    width: 80%;
+    border-size:2px;
+    border-radius: 40px;
+    
+   
+}
+
+p{ /*establece la alineación de la etiqueta <p> */
+    text-align: justify;
+}
+
+/*establece las propiedades de la etiqueta <a> para poner links en el documento*/
+a:link {
+	color:#da4b6a;
+	text-decoration:dotted; /* Esta etiqueda hace que los titulos no salgan subrayados azules sino
+	como tu quieras, en este caso rosaditos*/ 
+}
+a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
+	color: #2dbee2f3;
+}
+
+
+
+.navegacion-paginas{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+
+    
+    width: fit-content;
+    height:max-content; 
+    border-style: solid;
+    border-color: #D63447;
+    border-size: 2px;
+    font-family: 'Poppins', sans-serif;
+
+    text-align:center;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.navegacion-pagina{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+
+    display: block;
+    width: 40%;
+    height: fit-content;
+    border-style: solid;
+    border-color: #4c8c92;
+    background-image: #d48d8d;
+    border-size: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    font-size: 20px;
+    padding: 1.5%;
+    z-index: 15px;
+}
+
+.navegacion-pagina li {
+    list-style-type: none; /*Hace que no se vean los puntos de la lista*/
+}
+
+button{
+    /*aqui se modifican las propiedades de los botones de navegación en la parte superior del cocumento*/
+    border-radius: 10px; /*Añade esquinas curvas*/
+    background-color: transparent;
+    font-family: 'Montserrat','sans-serif';
+    border-color:#EA5455;
+    padding: 10px;
+    color: #682C0E;
+}
+
+button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre el botón*/
+    border-radius: 10px; /*Añade esquinas curvas*/
+    background-color:#FFD460;
+    font-family: 'Poppins','sans-serif';
+    border-color:#F07B3F;
+    padding: 10px;
+    color:#2D4059;
+}
+
+/* Secciones de las paginas*/
+
+.espacio-Ubicacion{ /*Para la pagina 1, establece sus propiedades*/
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+    margin-left: 40px; /*establece cual es la distancia entre el texto y la margen izquierda y derecha*/
+    margin-right: 40px;
+    height: fit-content;
+    border-style:dashed;
+    background-color: #f3b359c4;
+    color: #3f3d3b;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.mapadelparamo{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto; /*centra la imagen*/
+    border-radius: 10px;
+    width: 90%; /*Hace que la imagen se adapte a la pantalla automáticamente */
+    height: 80%;
+
+}
+
+.carreteraCharala{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto; /*centra la imagen*/
+    border-radius: 10px;
+    width: 90%; /*Hace que la imagen se adapte a la pantalla automáticamente */
+    height: 80%;
+}
+
+/*Estas 2 clases se usan en todo el documento para poner subtitulos y créditos a las imágenes*/
+.titulo-seccion{
+    font-family: 'Poppins','sans-serif';
+    font-size: 20px;
+    color: white;
+}
+.creditos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+/*Estas 2 clases establecen las propiedades para las páginas 2 y 4 del documento*/
+
+.personajes{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+    margin-left: 40px;
+    margin-right: 40px;
+    height: fit-content;
+    border-style:dashed; /*Establece el borde de la sección como punteado*/
+    background-color: #DC3737;
+    color: #F7AF1D;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.historia{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+    margin-left: 40px;
+    margin-right: 40px;
+    height: fit-content;
+    border-style:dashed;
+    background-color: #EA5959;
+    color: #FFC057;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+
+/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
+.ganaderia{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+.endemismo{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+.imgHistoria{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    border-radius: 30px;
+}
+/*Estas 2 clases establecen las propiedades para la pagina 3 del documento*/
+.actividades{
+    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    max-height: fit-content;
+    border-style:dashed;
+    background-color: #FDB87D;
+    color: #878849;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align:justify;
+    font-size: 18px;
+    padding: 1%;
+}
+/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
+.imgtabla{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+.imgtabla:hover{
+    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 90%;
+    height: 60%;
+    border-radius: 40px;
+}
+/*Finalmente tenemos las propiedades de la tabla*/
+table,tr,th,td{
+    /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
+    border-radius: 10px; 
+    border-style: solid;
+    border-color: #2D4059;
+    border-spacing: 13px 13px;
+    padding: 3%;
+}

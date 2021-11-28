@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--En la etiqueta head tenemos anclado la hoja de estilos 
+    también unas etiquetas de meta para que todo salga bien
+y el titulo de la pestaña -->
+    <link href="./imagenes/estilos.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción- Paramo</title>
+</head>
+<body>
+    <h1>  <!-- h1 sirve para poner titulos grandes-->
+        Páramo de la Rusia
+    </h1>
+
+    <div class="desplegable">
+        <button id="btn_menu">Menu</button>
+
+        <div class="boton_desplegable"> <!-- Iniciamos el botón desplegable. Div es una
+            etiqueta quenos permite agrupar contenido-->
+                <ul class="lista_desplegable">
+                    <li> 
+                        <a href="./index.html"><button> Inicio</button></a>   <!-- <a> sirve para poner enlaces. Dentro de ellos    ponemos botones para que el usuario pueda navegar entre paginas-->
+                    </li>
+                    <li><a href="./uno.html"> <button> Espacio & Ubicación  </button></a> </li>
+                    <li> <a href="./dos.html"> <button>Personajes</button></a> </li> 
+                    <li><a href="./tres.html"> <button>Actividades</button></a>   </li>
+                    <li> <a href="./cuatro.html"><button> Historia</button>  </a> </li>
+                    <li> <a href="./cinco.html"><button> Fuentes</button> </a> </li>
+        
+                </ul>
+        
+            </div>
+    </div>
+
+    <br>
+    <br>
+
+    <section class="informacion-inicial">  <!--creamos una sección, y le damos un nombre personalizado para modificar en css -->
+        <h4>Primer foro Gráfica Interactiva Unal</h4>
+        <h4> Autor: Juan Manuel Cortes Jimenez</h4>
+         <!--h4 es un texto menos grande -->
+    </section>
+<br>  <!--salto de linea -->
+ <section class="navegacion-paginas">  <!-- en esta seccion ponemos los botones de navegación-->
+    <a href="./index.html"><button> Inicio</button></a>   <!-- <a> sirve para poner enlaces. Dentro de ellos
+        ponemos botones para que el usuario pueda navegar entre paginas-->
+    <a href="./uno.html"> <button> Espacio & Ubicación  </button></a>
+    <a href="./dos.html"> <button>Personajes</button></a> 
+    <a href="./tres.html"> <button>Actividades</button></a>  
+    <a href="./cuatro.html"><button> Historia</button>  </a>  
+    <a href="./cinco.html"><button> Fuentes</button> </a> 
+ </section>
+ <br>   
+ <section class="introduccion">
+ <h5>Introducción</h5>
+  <!-- <p> es la etiqueta para poner parrafo <em> para poner texto en italica -->
+ <p> El <em> Páramo de la Rusia</em> es un lugar que me gusta bastante, además de estar 
+    cerca a donde vivo. 
+    Es por esto, que quiero dedicarle esta página, 
+    para hablar de como es su espacio físico y ubicación, 
+    quienes lo habitan, que se puede hacer allí, y un poco de su historia. <br>
+    Pero Antes: <br> <em> <a href="https://www.eafit.edu.co/escuelas/ciencias/noticias/Paginas/conoce-p%C3%A1ramos-colombianos.aspx" class="linkeafit"> ¿Qué es un Páramo? </a></em> 
+    </p>
+     <!--esta etiqueta nos permite traer imagenes de una ruta especifica. alt es para poner texto alternativo -->
+    <img src="./imagenes/fotoIntroduccion.JPG" alt="Frailejon en plano contrapicado" class="imagenIntroduccion">
+ </section>
+
+
+</body>
+</html>
