@@ -250,8 +250,8 @@ h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
 
 .imagenIntroduccion{
     /*Define el ancho y alto de la imagen, así como que sus esquinas tengan bordes redondeados*/
-    height: 200px;
-    width: 300px;
+    height: 60%;
+    width: 50%;
     border-size:2px;
     border-radius: 20px;
     
