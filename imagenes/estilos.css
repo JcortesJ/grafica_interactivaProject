@@ -107,9 +107,7 @@ Se agregó el mapa del sitio en la ultima página
 
     }
 
-    p{
-        font-size: 18px;
-    }
+    
     .navegacion-paginas{
         display: none; /*hace que la navegación de la página se vea invisible 
         y solo se note el botón del menu */
@@ -119,14 +117,22 @@ Se agregó el mapa del sitio en la ultima página
         display: block;
     }
 
-    .introduccion{
-        font-size: 25px;
-        line-height : 30px; /* Modifica el interlineado del texto*/ 
+    p{
+        font-size: 18px;
+        line-height : 1.2; /* Modifica el interlineado del texto*/ 
         text-align: left;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 1;
+        margin-right: 1;
         padding: 2%;
 
+    }
+
+    .titulo-seccion{
+        font-size: 23;
+    }
+
+    h5{
+        font-size: 25px;
     }
 
 
