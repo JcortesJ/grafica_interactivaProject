@@ -17,30 +17,17 @@ font-family: 'Poppins', sans-serif; /* Me trae la fuente de Google Fonts y la es
 }
 
 /*
-.boton_desplegable{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-    /*
-    background: #000;
-    clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: all 0.3s ease-in-out;
-    text-align: left;
-}
-
-
-.desplegable :hover ~ .boton_desplegable{
-    clip-path: circle(75%);
-}
+Cambios hechos para generar un diseño adaptativo
+Los tamaños de las imágenes se adecuaron para que se muestren según los porcentajes de las pantallas
+Las margenes de las secciones se ajustaron para que quepa la mayor parte del contenido
+Se creó un menú de navegación para pantallas pequeñas
+En las tablas que había se les puso una posición relativa y que flotaran hacia la izquierda para pantallas pequeñas
+se ajustó el tamaño de las fuentes
+se cambiaron algunos colores, como los de fondo de acuerdo a la pantalla usada
+Se adecuó un diseño de acuerdo a lo requerido: pantallas pequeñas, medianas y normales
+Se agregó el mapa del sitio en la ultima página
 */
-/* pendiente ver como hacer para que en el primer estilo se quede el menu 
-y no desaparezca luego de dejar de tocar el desplegable */
+
 
 .desplegable {
     position: relative;
@@ -136,6 +123,19 @@ y no desaparezca luego de dejar de tocar el desplegable */
         font-size: 25px;
         line-height : 30px; /* Modifica el interlineado del texto*/ 
         text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 2%;
+
+    }
+
+
+    .introduccion{
+        font-size: 25px;
+        line-height : 30px; /* Modifica el interlineado del texto*/ 
+        text-align: left;
+        
+        
     }
 
     .imagenIntroduccion{
