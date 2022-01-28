@@ -8,11 +8,7 @@ font-family: 'Poppins', sans-serif; /* Me trae la fuente de Google Fonts y la es
 
    /* esta etiqueta me genera un gradiente lineal con 3 colores y su porcentaje */
    
-   /*Ajustamos las margenes del documento */
-   margin-left: 40px;
-   margin-right: 40px;
-   margin-top: 10px;
-   margin-bottom: 40px;
+   
    
 }
 
@@ -115,11 +111,13 @@ absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados don
 	border-style:dashed; /*Establece el borde de la sección como punteado*/
 	border-color: #C51350;
     border-size: 2px;
-	width: 70%;
+	
 	padding: 1%;
 	margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 70%;
+    display:block;
     margin-bottom:15px;
-	display:block;
+	
 }
 
 
@@ -308,11 +306,13 @@ h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
  }
 
 .informacion-inicial{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
+  
 
-    /*Establece el ancho y largo de la sección de modo que se ajuste al contenido*/
-    width: fit-content;
-    height: fit-content;
+
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 80%;
+    display:block;
+   
     /*establece las propiedades del borde, estilo, color y grosor*/
     border-style: solid;
     border-color: #2D4059;
@@ -326,10 +326,12 @@ h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
 }
 
 .titulo-De-la-Pagina{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
 
-    width: fit-content;
-    height: fit-content;
+
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 80%;
+    display:block;
+   
     border-style: solid;
     border-color: #D63447;
     border-size: 2px;
@@ -341,12 +343,11 @@ h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
 }
 
 .introduccion{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-
-    margin-left: 40px;
-    margin-right: 40px;
-    
-    height: fit-content;
+  
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display:block;
+   
     border-style:dashed;
     background-color: #C24914;
     color: #FFF8CD;
@@ -454,11 +455,10 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
 /* Secciones de las paginas*/
 
 .espacio-Ubicacion{ /*Para la pagina 1, establece sus propiedades*/
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-    margin-left: 40px; /*establece cual es la distancia entre el texto y la margen izquierda y derecha*/
-    margin-right: 40px;
-    width: fit-content;
-    height: fit-content;
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display:block;
+   
     border-style:dashed;
     background-color: #f3b359c4;
     color: #3f3d3b;
@@ -502,11 +502,9 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
 /*Estas 2 clases establecen las propiedades para las páginas 2 y 4 del documento*/
 
 .personajes{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-    margin-left: 40px;
-    margin-right: 40px;
-    width: fit-content;
-    height: fit-content;
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display:block;
     border-style:dashed; /*Establece el borde de la sección como punteado*/
     background-color: #DC3737;
     color: #F7AF1D;
@@ -519,11 +517,9 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
 }
 
 .historia{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-    margin-left: 40px;
-    margin-right: 40px;
-    width: fit-content;
-    height: fit-content;
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display:block;
     border-style:dashed;
     background-color: #EA5959;
     color: #FFC057;
@@ -562,11 +558,9 @@ button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre 
 }
 /*Estas 2 clases establecen las propiedades para la pagina 3 del documento*/
 .actividades{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-    margin-left: 40px;
-    margin-right: 40px;
-    width: fit-content;
-    height: fit-content;
+    margin:auto; /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display:block;
     border-style:dashed;
     background-color: #FDB87D;
     color: #878849;
