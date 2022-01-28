@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Estilo para definir las propiedades del fondo de la página*/
+body {
+	background-color:#DDDDDD;
+	background-position:center;
+}
+
+/*Estilo para el título*/
+h1{
+	text-shadow: 1px 1px 1px black;
+	font-size: 2em;
+	color: #DDDDDD;
+	box-shadow: 2px 2px 5px black;
+    margin: auto;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #888888;
+	border: 3px solid #AAAAAA;
+	width: 92%;
+}
+
+/*Estilo para el div en el que está contenido el mapa interactivo*/
+.mapa_UN {
+	position:relative; 
+	font-size:1.15em;
+	color:#000000;
+	background-color:#DDDDDD;
+	border: 3px solid #AAAAAA;
+	box-shadow:2px 2px 5px black;
+	width: 90%;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	display:block;
+}
+/*Estilo para la imagen del mapa interactivo*/
+.mapa {
+	width: 98%;
+	display: block;
+	margin: auto;
+}
+
+/*Estilos para cada uno de los puntos en el mapa interactivo*/
+.punto1 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:4%;
+	left:58%;
+}
+.punto2 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:67%;
+	left:26%;
+}
+.punto3 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:27%;
+	left:83%;
+}
+.punto4 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:32%;
+	left:66.5%;
+}
+
+/*Estilo para los párrafos*/
+p {
+	font-size:1.2em;
+	color:#000000;
+	background-color:#DDDDDD;
+	width: 90%;
+    margin: auto;
+	padding: 1%;
+	display:block;
+}
+/*Estilo para la imagen en el párrafo de información sobre el mapa interactivo*/
+.imgM {
+	max-width: 20%;
+	float:right;
+	margin:2%;
+	border: 1px solid #FFFFFF;
+	box-shadow:1px 1px 4px black;
+}
