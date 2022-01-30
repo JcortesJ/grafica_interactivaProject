@@ -59,6 +59,7 @@
         </h2>
     </section>
     <br>
+
     <nav class="navegacion-paginas">
         <a href="./index.html"><button> Inicio</button></a>
         <a href="./uno.html"> <button> Espacio & Ubicación </button></a>
@@ -75,7 +76,8 @@
 
 
 
-
+    <!-- Article es como un div, pero aplicando html semantico. Osea
+  poniendo etiquetas mas claras para el tipo de contenido-->
 
     <article class="mapaInteractivoSection">
         <!-- En esta parte, es donde va el texto flotante con la informacion -->
@@ -105,15 +107,17 @@
                 <br>
                 <img id="imagen_mostrar2">
                 <br>
-                <video id="video_mostrar" autoplay muted></video>
+                <video id="video_mostrar" autoplay muted loop></video>
                 <br>
             </article>
 
 
 
         </article>
+        <h5>¿Cómo usar el mapa? Toca el punto que quieras y notarás la diferencia</h5>
     </article>
-    <!--Tienes que mirar como arreglar el problema del titulo, ya sea poniendolo al lado del mapa o algo XD-->
+
+    <!--Finalmente se pone el script al final, para que cargue primero el contenido-->
 
 
     <script src="./mapaInt.js " type="text/javascript "></script>
