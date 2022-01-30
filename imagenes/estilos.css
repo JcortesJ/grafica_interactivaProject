@@ -55,7 +55,23 @@ El ejemplo puede verse en este link de mi GitHub  https://jcortesj.github.io/res
 
 .desplegable:hover .boton_desplegable {
     display: block;
+    animation: menuLateral;
+    animation-duration: 0.5s;
     /*Cuando se pose sobre el div desplegable, muestra el menu de navegacion*/
+    /*Se agrega animación al menu*/
+}
+
+@keyframes menuLateral {
+    from {
+        /*pone color naranja e inicia desde -x*/
+        transform: translateX(-10%);
+        background-color: #F07B3F;
+    }
+    to {
+        /*pone color amarillito y acaba en x*/
+        transform: translateX(5%);
+        background-color: #7dc2b6;
+    }
 }
 
 #btn_menu {
@@ -427,6 +443,21 @@ td {
 
 /* PAGINA 6 - MAPA INTERACTIVO */
 
+
+/*
+¿Qué fue lo que se hizo?
+Primeramente conseguir un mapa svg y organizarlo en el documento
+Poner los puntos de interes
+Crear un <article> que nos muestre la informacion
+conseguir la informacion
+ponerle interactividad con un script de javascript
+poner una animacion con css
+
+*/
+
+
+/*Puntos de interés*/
+
 .inicioMapa {
     background-color: coral;
     z-index: 2;
@@ -437,18 +468,6 @@ td {
     left: 57.5%;
     bottom: 20%;
 }
-
-
-/*
-¿QUÉ SOLUCIONÉ PARA QUE SIRVIERA?
-Bueno primero que todo son la 1:34 de la mañana, así que XD.
-Ahora, por otro lado encontré 2 errores que pude sln aplicando width y height
-
-1. debiamos poner el width del div en 70% de la pantalla, y ponerle margin 0,ademas de pos relativa
-2. en el mapa debiamos hacer lo mismo, ponerlo como bloque, margin auto, y width: 70%
-3. por ultimo, el height y width de los punticos debia estar en porcentajes y con posicion
-absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados donde estan 
-*/
 
 .cascadas {
     z-index: 2;
@@ -514,6 +533,9 @@ absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados don
     background-color: #c51cf8;
 }
 
+
+/*Article donde se guarda el mapa y su contenido*/
+
 .mapaInteractivoSection {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -548,9 +570,31 @@ absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados don
     left: 18%;
     border-radius: 4%;
     background-color: rgb(241, 235, 202);
+    /*Ejecutamos la animacion por 1s*/
+    animation: moverseLateral;
+    animation-duration: 1s;
     /*Le añade un efecto de sombra a la caja*/
     box-shadow: 0.5px 0.5px 1px 1px black;
 }
+
+
+/*Esta animacion consiste en un desde a un hasta para la ventana emergente*/
+
+@keyframes moverseLateral {
+    from {
+        /*pone color naranja e inicia desde -x*/
+        transform: translateX(-10%);
+        background-color: #F07B3F;
+    }
+    to {
+        /*pone color amarillito y acaba en x*/
+        transform: translateX(5%);
+        background-color: rgb(241, 235, 202);
+    }
+}
+
+
+/* Espacios para mostrar imagenes, texto y videos*/
 
 #titulo_informacion {
     text-align: center;
@@ -592,6 +636,7 @@ absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados don
 
 La razón de ponerlos aquí, es por que en stack encontré que en css prevalece la regla del 
 ultimo. Es decir, lo ultimo que se ponga es lo ultimo que se ejecutará
+Entonces mejor poner el media only al final, para evitar problemas futuros
 */
 
 @media only screen and (max-width: 840px) {
