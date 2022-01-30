@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
- 
-font-family: 'Poppins', sans-serif; /* Me trae la fuente de Google Fonts y la establezco para todas las paginas */
-   background-image: linear-gradient(90deg, #833ab4 18%, rgb(211, 110, 110) 56%, rgba(252,176,69,1) 89%);
-
-
-   /* esta etiqueta me genera un gradiente lineal con 3 colores y su porcentaje */
-   
-   
-   
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Me trae la fuente de Google Fonts y la establezco para todas las paginas */
+    background-image: linear-gradient(90deg, #833ab4 18%, rgb(211, 110, 110) 56%, rgba(252, 176, 69, 1) 89%);
+    /* esta etiqueta me genera un gradiente lineal con 3 colores y su porcentaje */
 }
+
 
 /*
 Cambios hechos para generar un diseño adaptativo
@@ -25,14 +21,423 @@ Se agregó el mapa del sitio en la ultima página
 El ejemplo puede verse en este link de mi GitHub  https://jcortesj.github.io/responsive_desginCSS/ 
 */
 
-.inicioMapa{
+.mapaImagen {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+.boton_desplegable {
+    /*En este caso, la etiqueta se pone para que no se vea cuando
+    la pantalla es normal*/
+    display: none;
+    position: absolute;
+    /*Mantiene una posición fija*/
+    background-color: #7dc2b6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 20;
+    /* hace que el menu esté encima de los demás*/
+    transition: all 1s ease-in-out;
+    /*Una pequeña transición*/
+}
+
+.lista_desplegable li {
+    list-style-type: none;
+    /*Elimina los bullets de la lista*/
+}
+
+.desplegable:hover .boton_desplegable {
+    display: block;
+    /*Cuando se pose sobre el div desplegable, muestra el menu de navegacion*/
+}
+
+#btn_menu {
+    display: none;
+}
+
+
+/*Hace que no se vea el botón del menu*/
+
+h1 {
+    text-align: center;
+    /*Centra los titulos h1, le da color, y tamaño a la fuente*/
+    color: #FFFF00;
+    font-size: 70px;
+}
+
+h4 {
+    /*Centra los titulos h4, le da color y tamaño a la fuente*/
+    color: #2D4059;
+    text-align: center;
+}
+
+.informacion-inicial {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 80%;
+    display: block;
+    /*establece las propiedades del borde, estilo, color y grosor*/
+    border-style: solid;
+    border-color: #2D4059;
+    border-size: 2px;
+    /*Establece las propiedades del texto: fuente, alineación y tamaño*/
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    /*establece distancia entre el texto y el borde*/
+    padding: 0.4%;
+}
+
+.titulo-De-la-Pagina {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 80%;
+    display: block;
+    border-style: solid;
+    border-color: #D63447;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    font-size: large;
+    padding: 0.4%;
+}
+
+.introduccion {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display: block;
+    border-style: dashed;
+    background-color: #C24914;
+    color: #FFF8CD;
+    border-color: #2D4059;
+    border-size: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.imagenIntroduccion {
+    /*Define el ancho y alto de la imagen, así como que sus esquinas tengan bordes redondeados*/
+    height: 60%;
+    width: 50%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-size: 2px;
+    border-radius: 20px;
+}
+
+
+/*Este elemento sirve para decirle a css que hacer cuando se ponga un cursor sobre la etiqueta*/
+
+.imagenIntroduccion:hover {
+    height: 90%;
+    width: 80%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-size: 2px;
+    border-radius: 40px;
+}
+
+p {
+    /*establece la alineación de la etiqueta <p> */
+    text-align: justify;
+}
+
+
+/*establece las propiedades de la etiqueta <a> para poner links en el documento*/
+
+a:link {
+    color: #da4b6a;
+    text-decoration: dotted;
+    /* Esta etiqueda hace que los titulos no salgan subrayados azules sino
+	como tu quieras, en este caso rosaditos*/
+}
+
+a:hover {
+    /* indica el estilo cuando el cursor está sobre el elemento */
+    color: #2dbee2f3;
+}
+
+.navegacion-paginas {
+    margin: 0 auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: fit-content;
+    height: max-content;
+    border-style: solid;
+    border-color: #D63447;
+    border-size: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.navegacion-pagina {
+    margin: 0 auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+    border-color: #4c8c92;
+    background-image: #d48d8d;
+    border-size: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 1.5%;
+    z-index: 15px;
+}
+
+.navegacion-pagina li {
+    list-style-type: none;
+    /*Hace que no se vean los puntos de la lista*/
+}
+
+button {
+    /*aqui se modifican las propiedades de los botones de navegación en la parte superior del cocumento*/
+    border-radius: 10px;
+    /*Añade esquinas curvas*/
+    background-color: transparent;
+    font-family: 'Montserrat', 'sans-serif';
+    border-color: #EA5455;
+    padding: 10px;
+    color: #682C0E;
+}
+
+button:hover {
+    /*se establece que debe hacer css cuando se ponga el cursor sobre el botón*/
+    border-radius: 10px;
+    /*Añade esquinas curvas*/
+    background-color: #FFD460;
+    font-family: 'Poppins', 'sans-serif';
+    border-color: #F07B3F;
+    padding: 10px;
+    color: #2D4059;
+}
+
+
+/* Secciones de las paginas*/
+
+.espacio-Ubicacion {
+    /*Para la pagina 1, establece sus propiedades*/
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display: block;
+    border-style: dashed;
+    background-color: #f3b359c4;
+    color: #3f3d3b;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.mapadelparamo {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    /*centra la imagen*/
+    border-radius: 10px;
+    width: 90%;
+    /*Hace que la imagen se adapte a la pantalla automáticamente */
+    height: 80%;
+}
+
+.carreteraCharala {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    /*centra la imagen*/
+    border-radius: 10px;
+    width: 90%;
+    /*Hace que la imagen se adapte a la pantalla automáticamente */
+    height: 80%;
+}
+
+
+/*Estas 2 clases se usan en todo el documento para poner subtitulos y créditos a las imágenes*/
+
+.titulo-seccion {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 20px;
+    color: white;
+}
+
+.creditos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/*Estas 2 clases establecen las propiedades para las páginas 2 y 4 del documento*/
+
+.personajes {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display: block;
+    border-style: dashed;
+    /*Establece el borde de la sección como punteado*/
+    background-color: #DC3737;
+    color: #F7AF1D;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+.historia {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display: block;
+    border-style: dashed;
+    background-color: #EA5959;
+    color: #FFC057;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+
+/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
+
+.ganaderia {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-radius: 30px;
+}
+
+.endemismo {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-radius: 30px;
+}
+
+.imgHistoria {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-radius: 30px;
+}
+
+
+/*Estas 2 clases establecen las propiedades para la pagina 3 del documento*/
+
+.actividades {
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 95%;
+    display: block;
+    border-style: dashed;
+    background-color: #FDB87D;
+    color: #878849;
+    border-color: #C51350;
+    border-size: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    padding: 1%;
+}
+
+
+/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
+
+.imgtabla {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 60%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    height: 50%;
+    border-radius: 30px;
+}
+
+.imgtabla:hover {
+    display: block;
+    /* hace que la imagen se interprete como un bloque y se pueda centrar*/
+    margin: 0 auto;
+    width: 90%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    height: 60%;
+    border-radius: 40px;
+}
+
+
+/*Finalmente tenemos las propiedades de la tabla*/
+
+table,
+tr,
+th,
+td {
+    /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2D4059;
+    border-spacing: 13px 13px;
+    padding: 3%;
+}
+
+
+/* pagina 5, seccion créditos */
+
+.mapa_sitio {
+    height: 50%;
+    width: 50%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    border-radius: 4px;
+}
+
+.mapa_sitio:hover {
+    height: 80%;
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    width: 80%;
+    border-radius: 4px;
+}
+
+
+/* PAGINA 6 - MAPA INTERACTIVO */
+
+.inicioMapa {
+    background-color: coral;
     z-index: 2;
-    position:  absolute;
-    height: 8%;
-    width: 8%;
-    left: 55.5%;
+    border-radius: 50%;
+    position: absolute;
+    height: 3%;
+    width: 3%;
+    left: 57.5%;
     bottom: 20%;
 }
+
 
 /*
 ¿QUÉ SOLUCIONÉ PARA QUE SIRVIERA?
@@ -44,144 +449,175 @@ Ahora, por otro lado encontré 2 errores que pude sln aplicando width y height
 3. por ultimo, el height y width de los punticos debia estar en porcentajes y con posicion
 absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados donde estan 
 */
-.cascadas{
+
+.cascadas {
     z-index: 2;
-    position:  absolute;
+    position: absolute;
     height: 8%;
     width: 8%;
     left: 60%;
     bottom: 40%;
 }
 
-.rioPuente{
+.rioPuente {
     z-index: 2;
-    position:  absolute;
+    position: absolute;
     height: 8%;
     width: 8%;
     left: 60%;
     bottom: 57%;
 }
 
-.curvasPeligrosas{
+.curvasPeligrosas {
     z-index: 2;
-    position:  absolute;
+    position: absolute;
     height: 8%;
     width: 8%;
     left: 47%;
     bottom: 58%;
 }
 
-.bosqueRio{
+.bosqueRio {
     z-index: 2;
-    position:  absolute;
+    position: absolute;
     height: 8%;
     width: 8%;
     left: 58.5%;
     bottom: 65%;
 }
 
-.paramo{
+.paramo {
     z-index: 2;
-    position:  absolute;
+    position: absolute;
     height: 8%;
     width: 8%;
     left: 20.5%;
     bottom: 80%;
 }
 
-.lagunas{
+.lagunas {
     z-index: 2;
-    position:  absolute;
-    height: 8%;
-    width: 8%;
+    position: absolute;
+    background-color: #DC3737;
+    border-radius: 50%;
+    height: 3%;
+    width: 3%;
     left: 40.5%;
     bottom: 94%;
 }
 
-
-
-
-.mapaInteractivoSection{
-
-    position:relative; 
-	font-family: 'Montserrat', sans-serif;
-	color: #F7AF1D;
-	background-color: #DC3737;
-    font-size: 18px;
-	border-style:dashed; /*Establece el borde de la sección como punteado*/
-	border-color: #C51350;
-    border-size: 2px;
-	
-	padding: 1%;
-	margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 70%;
-    display:block;
-    margin-bottom:15px;
-	
+.inicioMapa:hover {
+    background-color: #1cc5f8;
 }
 
-
-
-.mapaImagen{
-    width: 70%;
-	display: block;
-	margin: auto;
+.lagunas:hover {
+    background-color: #c51cf8;
 }
 
-.desplegable {
+.mapaInteractivoSection {
     position: relative;
-    display: inline-block;
-  }
-  
-  .boton_desplegable { /*En este caso, la etiqueta se pone para que no se vea cuando
-    la pantalla es normal*/
+    font-family: 'Montserrat', sans-serif;
+    color: #F7AF1D;
+    background-color: #DC3737;
+    font-size: 18px;
+    border-style: dashed;
+    /*Establece el borde de la sección como punteado*/
+    border-color: #C51350;
+    border-size: 2px;
+    padding: 1%;
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 70%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/*Texto que sale al tocar los puntos del mapa interactivo*/
+
+#dialogo {
+    /*Por defecto, no debería mostrarse el mapa*/
     display: none;
-    position: absolute; /*Mantiene una posición fija*/
-    background-color: #7dc2b6;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 20; /* hace que el menu esté encima de los demás*/
-    transition: all 1s ease-in-out; /*Una pequeña transición*/
-    
-  }
+    border: black;
+    z-index: 5;
+    position: absolute;
+    height: fit-content;
+    /*La altura se ajusta según el tamaño del contenido*/
+    width: 30%;
+    top: 40%;
+    left: 18%;
+    border-radius: 4%;
+    background-color: rgb(241, 235, 202);
+    /*Le añade un efecto de sombra a la caja*/
+    box-shadow: 0.5px 0.5px 1px 1px black;
+}
 
-  .lista_desplegable li {
-    list-style-type: none; /*Elimina los bullets de la lista*/
-  }
-  
-  .desplegable:hover .boton_desplegable {
-    display:block; /*Cuando se pose sobre el div desplegable, muestra el menu de navegacion*/
-  }
+#titulo_informacion {
+    text-align: center;
+    font-size: small;
+}
 
-  #btn_menu{
-      display: none;
-  } /*Hace que no se vea el botón del menu*/
- 
-  @media only screen and  (max-width: 840px) { /* cuando la ventana mida menos de 840px */
+#cuerpo_informacion {
+    text-align: justify;
+    font-size: 80%;
+    padding: 2%;
+}
+
+#imagen_mostrar1 {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#imagen_mostrar2 {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#video_mostrar {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* COMIENZAN LOS MEDIA ADJUST
+
+La razón de ponerlos aquí, es por que en stack encontré que en css prevalece la regla del 
+ultimo. Es decir, lo ultimo que se ponga es lo ultimo que se ejecutará
+*/
+
+@media only screen and (max-width: 840px) {
+    /* cuando la ventana mida menos de 840px */
     body {
         background-image: linear-gradient(90deg, #ccbebd 18%, rgb(201, 29, 253) 56%, rgb(69, 252, 237) 89%);
         font-size: 17px;
     }
-/*Se sube el tamaño de la fuente para la pantalla mediana*/
-    p{
+    /*Se sube el tamaño de la fuente para la pantalla mediana*/
+    p {
         font-size: 17px;
     }
-
-    .navegacion-pagina{
-       
+    .navegacion-pagina {
         font-family: 'Poppins', sans-serif;
-        text-align:left;
+        text-align: left;
         background-color: #60b2ff;
-        
     }
-
-    .introduccion{
+    .introduccion {
         font-size: 20px;
-        line-height : 30px; /* Modifica el interlineado del texto*/ 
+        line-height: 30px;
+        /* Modifica el interlineado del texto*/
     }
-
-    table,tr,th,td{
+    table,
+    tr,
+    th,
+    td {
         /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
         margin-left: auto;
         margin-right: auto;
@@ -190,93 +626,81 @@ absoluta, cosa que al cambiar el tamaño de la pantalla se mantengan pegados don
         font-size: 18px;
         line-height: 1.1;
         position: relative;
-        float:right;
+        float: right;
     }
-    
-  }
+    /*PARA EL CASO DEL MAPA INTERACTIVO*/
+    /*Necesitamos que el texto que sale quepa en la pantalla y no se vea feo*/
+    #titulo_informacion {
+        text-align: center;
+        font-size: 10px
+    }
+    #cuerpo_informacion {
+        text-align: justify;
+        font-size: 0.5em;
+        padding: 4%;
+    }
+}
 
-    
-
-  
-
-
-  @media only screen and  (max-width: 640px) { /* cuando la ventana mida menos de 640px */
+@media only screen and (max-width: 640px) {
+    /* cuando la ventana mida menos de 640px */
     body {
         background-image: linear-gradient(90deg, #b158cc 18%, rgb(115, 155, 248) 56%, rgb(255, 126, 137) 89%);
         font-size: 18px;
-
-
     }
-
-    
-    .navegacion-paginas{
-        display: none; /*hace que la navegación de la página se vea invisible 
+    .navegacion-paginas {
+        display: none;
+        /*hace que la navegación de la página se vea invisible 
         y solo se note el botón del menu */
     }
-
-    #btn_menu{
+    #btn_menu {
         display: block;
     }
-/* Se aumenta el tamaño de la fuente, y se modifican las propiedades de la etiqueta p
+    /* Se aumenta el tamaño de la fuente, y se modifican las propiedades de la etiqueta p
 para pantallas pequeñas 
 */
-    p{
+    p {
         font-size: 18px;
-        line-height : 1.2; /* Modifica el interlineado del texto*/ 
+        line-height: 1.2;
+        /* Modifica el interlineado del texto*/
         text-align: left;
         margin-left: 1;
         margin-right: 1;
         padding: 2%;
-
     }
-
-    .titulo-seccion{
+    .titulo-seccion {
         font-size: 23;
     }
-
-    h5{
+    h5 {
         font-size: 25px;
     }
-
-
-    .introduccion{
+    .introduccion {
         font-size: 25px;
-        line-height : 30px; /* Modifica el interlineado del texto*/ 
+        line-height: 30px;
+        /* Modifica el interlineado del texto*/
         text-align: left;
-        
-        
     }
-/* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/ 
-    .imagenIntroduccion{
+    /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
+    .imagenIntroduccion {
         width: 60%;
         height: 50%;
         border-radius: 30px;
     }
-
-    .imagenIntroduccion:hover{
+    .imagenIntroduccion:hover {
         border-radius: 50px;
-
     }
-/*En pantallas pequeñas no se muestra la información inicial por que ocupa mucho espacio*/
-    .informacion-inicial{
+    /*En pantallas pequeñas no se muestra la información inicial por que ocupa mucho espacio*/
+    .informacion-inicial {
         display: none;
     }
-
-    
-
-    .navegacion-pagina{
-       
+    .navegacion-pagina {
         font-family: 'Poppins', sans-serif;
-        text-align:left;
+        text-align: left;
         background-color: #FFD460;
-        
     }
-
-    
-    
-
-
-    table,tr,th,td{
+    table,
+    tr,
+    th,
+    td {
         /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
         margin-left: auto;
         margin-right: auto;
@@ -285,330 +709,17 @@ para pantallas pequeñas
         font-size: 20px;
         line-height: 1.2;
         position: relative;
-        float:left;
+        float: left;
     }
-    
-  }
-
-
-
-  
-h1{
-   text-align: center; /*Centra los titulos h1, le da color, y tamaño a la fuente*/
-   color: #FFFF00;
-   font-size: 70px;
-}
-
-h4{ /*Centra los titulos h4, le da color y tamaño a la fuente*/
-    color: #2D4059;
-    text-align: center;
-  
- }
-
-.informacion-inicial{
-  
-
-
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 80%;
-    display:block;
-   
-    /*establece las propiedades del borde, estilo, color y grosor*/
-    border-style: solid;
-    border-color: #2D4059;
-    border-size: 2px;
-/*Establece las propiedades del texto: fuente, alineación y tamaño*/
-    font-family: 'Poppins', sans-serif;
-    text-align:center;
-    font-size: 20px;
-    /*establece distancia entre el texto y el borde*/
-    padding: 0.4%;
-}
-
-.titulo-De-la-Pagina{
-
-
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 80%;
-    display:block;
-   
-    border-style: solid;
-    border-color: #D63447;
-    border-size: 2px;
-    font-family:'Montserrat', sans-serif;
-    color: antiquewhite;
-    text-align:center;
-    font-size: large;
-    padding: 0.4%;
-}
-
-.introduccion{
-  
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 95%;
-    display:block;
-   
-    border-style:dashed;
-    background-color: #C24914;
-    color: #FFF8CD;
-    border-color: #2D4059;
-    border-size: 2px;
-    font-family: 'Poppins', sans-serif;
-
-    text-align:center;
-    font-size: 18px;
-    padding: 1%;
-}
-
-.imagenIntroduccion{
-    /*Define el ancho y alto de la imagen, así como que sus esquinas tengan bordes redondeados*/
-    height: 60%;
-    width: 50%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-size:2px;
-    border-radius: 20px;
-    
-   
-}
-/*Este elemento sirve para decirle a css que hacer cuando se ponga un cursor sobre la etiqueta*/
-.imagenIntroduccion:hover{
-    height: 90%;
-    width: 80%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-size:2px;
-    border-radius: 40px;
-    
-   
-}
-
-p{ /*establece la alineación de la etiqueta <p> */
-    text-align: justify;
-}
-
-/*establece las propiedades de la etiqueta <a> para poner links en el documento*/
-a:link {
-	color:#da4b6a;
-	text-decoration:dotted; /* Esta etiqueda hace que los titulos no salgan subrayados azules sino
-	como tu quieras, en este caso rosaditos*/ 
-}
-a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
-	color: #2dbee2f3;
-}
-
-
-
-.navegacion-paginas{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-
-    
-    width: fit-content;
-    height:max-content; 
-    border-style: solid;
-    border-color: #D63447;
-    border-size: 2px;
-    font-family: 'Poppins', sans-serif;
-
-    text-align:center;
-    font-size: 20px;
-    padding: 1%;
-}
-
-.navegacion-pagina{
-    margin: 0 auto; /* Centra la sección hacia el centro de la pagina*/
-
-    display: block;
-    width: fit-content;
-    height: fit-content;
-
-    border-style: solid;
-    border-color: #4c8c92;
-    background-image: #d48d8d;
-    border-size: 5px;
-    font-family: 'Poppins', sans-serif;
-    text-align:center;
-    font-size: 20px;
-    padding: 1.5%;
-    z-index: 15px;
-}
-
-.navegacion-pagina li {
-    list-style-type: none; /*Hace que no se vean los puntos de la lista*/
-}
-
-button{
-    /*aqui se modifican las propiedades de los botones de navegación en la parte superior del cocumento*/
-    border-radius: 10px; /*Añade esquinas curvas*/
-    background-color: transparent;
-    font-family: 'Montserrat','sans-serif';
-    border-color:#EA5455;
-    padding: 10px;
-    color: #682C0E;
-}
-
-button:hover{ /*se establece que debe hacer css cuando se ponga el cursor sobre el botón*/
-    border-radius: 10px; /*Añade esquinas curvas*/
-    background-color:#FFD460;
-    font-family: 'Poppins','sans-serif';
-    border-color:#F07B3F;
-    padding: 10px;
-    color:#2D4059;
-}
-
-/* Secciones de las paginas*/
-
-.espacio-Ubicacion{ /*Para la pagina 1, establece sus propiedades*/
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 95%;
-    display:block;
-   
-    border-style:dashed;
-    background-color: #f3b359c4;
-    color: #3f3d3b;
-    border-color: #C51350;
-    border-size: 2px;
-    font-family: 'Montserrat', sans-serif;
-    text-align:justify;
-    font-size: 18px;
-    padding: 1%;
-}
-
-.mapadelparamo{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto; /*centra la imagen*/
-    border-radius: 10px;
-    width: 90%; /*Hace que la imagen se adapte a la pantalla automáticamente */
-    height: 80%; 
-
-}
-
-.carreteraCharala{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto; /*centra la imagen*/
-    border-radius: 10px;
-    width: 90%; /*Hace que la imagen se adapte a la pantalla automáticamente */
-    height: 80%;
-}
-
-/*Estas 2 clases se usan en todo el documento para poner subtitulos y créditos a las imágenes*/
-.titulo-seccion{
-    font-family: 'Poppins','sans-serif';
-    font-size: 20px;
-    color: white;
-}
-.creditos{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    text-align: center;
-}
-
-/*Estas 2 clases establecen las propiedades para las páginas 2 y 4 del documento*/
-
-.personajes{
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 95%;
-    display:block;
-    border-style:dashed; /*Establece el borde de la sección como punteado*/
-    background-color: #DC3737;
-    color: #F7AF1D;
-    border-color: #C51350;
-    border-size: 2px;
-    font-family: 'Montserrat', sans-serif;
-    text-align:justify;
-    font-size: 18px;
-    padding: 1%;
-}
-
-.historia{
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 95%;
-    display:block;
-    border-style:dashed;
-    background-color: #EA5959;
-    color: #FFC057;
-    border-color: #C51350;
-    border-size: 2px;
-    font-family: 'Montserrat', sans-serif;
-    text-align:justify;
-    font-size: 18px;
-    padding: 1%;
-}
-
-
-/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
-.ganaderia{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto;
-    width: 60%;
-    height: 50%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-radius: 30px;
-}
-
-.endemismo{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto;
-    width: 60%;
-    height: 50%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-radius: 30px;
-}
-
-.imgHistoria{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto;
-    width: 60%;
-    height: 50%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-radius: 30px;
-}
-/*Estas 2 clases establecen las propiedades para la pagina 3 del documento*/
-.actividades{
-    margin:auto; /* Centra la sección hacia el centro de la pagina*/
-    width: 95%;
-    display:block;
-    border-style:dashed;
-    background-color: #FDB87D;
-    color: #878849;
-    border-color: #C51350;
-    border-size: 2px;
-    font-family: 'Montserrat', sans-serif;
-    text-align:justify;
-    font-size: 18px;
-    padding: 1%;
-}
-/*Estas clases especifican las imagenes usadas. Lo unico que cambia entre ellas es el tamaño con el que aparecen*/
-.imgtabla{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto;
-    width: 60%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    height: 50%;
-    border-radius: 30px;
-}
-
-.imgtabla:hover{
-    display: block; /* hace que la imagen se interprete como un bloque y se pueda centrar*/
-    margin: 0 auto;
-    width: 90%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    height: 60%;
-    border-radius: 40px;
-}
-/*Finalmente tenemos las propiedades de la tabla*/
-table,tr,th,td{
-    /*se le ponen bordes curvos, grosor solido, color 'azul', y espaciado entre las celdas*/
-    border-radius: 10px; 
-    border-style: solid;
-    border-color: #2D4059;
-    border-spacing: 13px 13px;
-    padding: 3%;
-}
-
-/* pagina 5, seccion créditos */
-
-.mapa_sitio{
-    height: 50%;
-    width: 50%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    border-radius: 4px;
-
-}
-
-.mapa_sitio:hover{
-    height: 80%; /* Modifica las dimensiones de la imagen para que se adapte según el tamaño de la pantalla*/
-    width: 80%;
-    border-radius: 4px;
-    
+    /*PARA EL CASO DEL MAPA INTERACTIVO*/
+    /*Necesitamos que el texto que sale quepa en la pantalla y no se vea feo*/
+    #titulo_informacion {
+        text-align: center;
+        font-size: 10px
+    }
+    #cuerpo_informacion {
+        text-align: justify;
+        font-size: 5px;
+        padding: 4%;
+    }
 }

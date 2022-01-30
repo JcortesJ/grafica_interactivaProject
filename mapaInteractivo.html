@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="./imagenes/estilos.css" rel="stylesheet" type="text/css">
     <link href='https://css.gg/pin.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hola mama estoy aprendiendo a programar</title>
 </head>
+
 <body>
-  
+
     <h1>
         Páramo de la Rusia
     </h1>
-    
+
     <div class="desplegable">
         <button id="btn_menu">Menu</button>
-    
-        <div class="boton_desplegable"> <!-- Iniciamos el botón desplegable. Div es una
+
+        <div class="boton_desplegable">
+            <!-- Iniciamos el botón desplegable. Div es una
             etiqueta quenos permite agrupar contenido-->
-                <ul class="lista_desplegable">
-                    <li> 
-                        <a href="./index.html"><button> Inicio</button></a>   <!-- <a> sirve para poner enlaces. Dentro de ellos    ponemos botones para que el usuario pueda navegar entre paginas-->
-                    </li>
-                    <li><a href="./uno.html"> <button> Espacio & Ubicación  </button></a> </li>
-                    <li> <a href="./dos.html"> <button>Personajes</button></a> </li> 
-                    <li><a href="./tres.html"> <button>Actividades</button></a>   </li>
-                    <li> <a href="./cuatro.html"><button> Historia</button>  </a> </li>
-                    <li> <a href="./cinco.html"><button> Fuentes</button> </a> </li>
-                    <li> <a href="./mapaInteractivo.html"> <button>Mapa interactivo</button> </a></li>
-        
-                </ul>
-        
-            </div>
+            <ul class="lista_desplegable">
+                <li>
+                    <a href="./index.html"><button> Inicio</button></a>
+                    <!-- <a> sirve para poner enlaces. Dentro de ellos    ponemos botones para que el usuario pueda navegar entre paginas-->
+                </li>
+                <li>
+                    <a href="./uno.html"> <button> Espacio & Ubicación </button></a>
+                </li>
+                <li>
+                    <a href="./dos.html"> <button>Personajes</button></a>
+                </li>
+                <li>
+                    <a href="./tres.html"> <button>Actividades</button></a>
+                </li>
+                <li> <a href="./cuatro.html"><button> Historia</button> </a> </li>
+                <li> <a href="./cinco.html"><button> Fuentes</button> </a> </li>
+                <li>
+                    <a href="./mapaInteractivo.html"> <button>Mapa interactivo</button> </a>
+                </li>
+
+            </ul>
+
+        </div>
     </div>
-    
+
     <br>
     <br>
-    
+
     <section class="titulo-De-la-Pagina">
         <br>
         <br>
         <h2>
             Mapa Interactivo
-         </h2>
-     </section>
+        </h2>
+    </section>
     <br>
     <nav class="navegacion-paginas">
-    <a href="./index.html"><button> Inicio</button></a> 
-    <a href="./uno.html"> <button> Espacio & Ubicación  </button></a>
-    <a href="./dos.html"> <button>Personajes</button></a> 
-    <a href="./tres.html"> <button>Actividades</button></a>  
-    <a href="./cuatro.html"><button> Historia</button>  </a>  
-    <a href="./cinco.html"><button> Fuentes</button> </a> 
-    <a href="./mapaInteractivo.html"> <button>Mapa interactivo</button> </a>
+        <a href="./index.html"><button> Inicio</button></a>
+        <a href="./uno.html"> <button> Espacio & Ubicación </button></a>
+        <a href="./dos.html"> <button>Personajes</button></a>
+        <a href="./tres.html"> <button>Actividades</button></a>
+        <a href="./cuatro.html"><button> Historia</button> </a>
+        <a href="./cinco.html"><button> Fuentes</button> </a>
+        <a href="./mapaInteractivo.html"> <button>Mapa interactivo</button> </a>
     </nav>
     <br>
     <br>
-   <article class="mapaInteractivoSection">
-       <!-- <img src="./mapa importado/svgtopng/map.png" class="mapaImagen"> -->
-       <img src="./mapa importado/puntico.png" class="inicioMapa" onclick="mostrarAlert()">
-       <img src="./mapa importado/puntico.png" class="cascadas" onclick="mostrarAlert()">
-       
-       <img src="./mapa importado/puntico.png" class="rioPuente" onclick="mostrarAlert()">
-       
-       <img src="./mapa importado/puntico.png" class="curvasPeligrosas" onclick="mostrarAlert()">
-       
-       <img src="./mapa importado/puntico.png" class="bosqueRio" onclick="mostrarAlert()">
-       <img src="./mapa importado/puntico.png" class="paramo" onclick="mostrarAlert()">
-       <img src="./mapa importado/puntico.png" class="lagunas" onclick="mostrarAlert()"> 
-    <img src="./mapa importado/map (3).svg" class="mapaImagen"> 
-    <p class="creditos">Mapa cortesía de <a href="https://www.openstreetmap.org/#map=13/5.9623/-73.0756" target="_blank"> Open Street Map</a></p>
 
-   <!-- <i class="gg-pin_2"></i> -->
-   </article>
-<!--Tienes que mirar como arreglar el problema del titulo, ya sea poniendolo al lado del mapa o algo XD-->
-   
 
-<script src="./mapaInt.js" type="text/javascript"></script>
+
+
+
+
+
+    <article class="mapaInteractivoSection">
+        <!-- En esta parte, es donde va el texto flotante con la informacion -->
+
+
+        <div class="inicioMapa" onclick="mostrarInicio()"> </div>
+        <img src="./mapa importado/puntico.png" class="cascadas" onclick="mostrarCascadas()">
+
+        <img src="./mapa importado/puntico.png" class="rioPuente" onclick="mostrarPuente()">
+
+        <img src="./mapa importado/puntico.png" class="curvasPeligrosas" onclick="mostrarCurvas()">
+
+        <img src="./mapa importado/puntico.png" class="bosqueRio" onclick="mostrarBosque()">
+        <img src="./mapa importado/puntico.png" class="paramo" onclick="mostrarParamo()">
+        <div src="./mapa importado/puntico.png" class="lagunas" onclick="mostrarLagunas()"> </div>
+        <img src="./mapa importado/map (3).svg" class="mapaImagen">
+        <p class="creditos">Mapa cortesía de <a href="https://www.openstreetmap.org/#map=13/5.9623/-73.0756" target="_blank"> Open Street Map</a></p>
+
+
+        <article id="dialogo">
+            <article class="informacion_mostrar">
+                <h4 id="titulo_informacion"> </h4>
+                <p id="cuerpo_informacion">
+
+                </p>
+                <img id="imagen_mostrar1">
+                <br>
+                <img id="imagen_mostrar2">
+                <br>
+                <video id="video_mostrar" autoplay muted></video>
+                <br>
+            </article>
+
+
+
+        </article>
+    </article>
+    <!--Tienes que mirar como arreglar el problema del titulo, ya sea poniendolo al lado del mapa o algo XD-->
+
+
+    <script src="./mapaInt.js " type="text/javascript "></script>
 </body>
+
 </html>
