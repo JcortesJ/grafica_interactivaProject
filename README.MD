@@ -19,5 +19,4 @@ comentar etiquetas que ya habia comentado antes, no lo repetí, sino solamente a
 comentarios a las cosas nuevas que le fuera metiendo.
 
 La página en su ultima versión puede encontrarse en: 
-
-https://jcortesj.github.io/responsive_desginCSS/
+https://github.com/JcortesJ/responsive_desginCSS
