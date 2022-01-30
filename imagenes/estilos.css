@@ -197,14 +197,14 @@ a:hover {
 }
 
 .navegacion-pagina {
-    margin: 0 auto;
+    margin: auto;
     /* Centra la sección hacia el centro de la pagina*/
     display: block;
     width: fit-content;
     height: fit-content;
     border-style: solid;
     border-color: #4c8c92;
-    background-image: #d48d8d;
+    background-color: #d3a0eb;
     border-size: 5px;
     font-family: 'Poppins', sans-serif;
     text-align: center;

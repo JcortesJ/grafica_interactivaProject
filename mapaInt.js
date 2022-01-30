@@ -222,6 +222,8 @@ function mostrarParamo() {
     //tambien lo ajustamos hacia la izquierda
     espacio_dialogo.style.left = "36%";
 
+    //ponemos que sea visible el video
+    espacio_video.style.display = "block";
 
     //verificamos si esta visible o no nuestra pantalla de dialogo
     if (espacio_dialogo.style.display == "none") {
